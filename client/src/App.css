@@ -6,8 +6,16 @@
   text-align: left;
 }
 
-.receipt-uploader {
+.capture-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   margin-bottom: 32px;
+}
+
+.receipt-uploader,
+.camera-capture {
+  flex: 1 1 260px;
 }
 
 .upload-button {
@@ -19,6 +27,40 @@
   color: #fff;
   background: var(--accent);
   cursor: pointer;
+}
+
+.camera-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 360px;
+}
+
+.camera-preview video {
+  width: 100%;
+  border-radius: 8px;
+  background: #000;
+}
+
+.camera-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.camera-controls button {
+  font: inherit;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-h);
+  cursor: pointer;
+}
+
+.camera-controls button:first-child {
+  border: none;
+  color: #fff;
+  background: var(--accent);
 }
 
 .error {
