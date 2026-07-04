@@ -1,0 +1,85 @@
+.app {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  text-align: left;
+}
+
+.receipt-uploader {
+  margin-bottom: 32px;
+}
+
+.upload-button {
+  display: inline-flex;
+  font: inherit;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+.error {
+  color: #e5484d;
+  margin-top: 8px;
+}
+
+.empty {
+  color: var(--text);
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.chart-box {
+  flex: 1 1 320px;
+  min-width: 280px;
+  max-width: 420px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.chart-box h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  color: var(--text-h);
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.transaction-table .price {
+  text-align: right;
+}
+
+.transaction-table button {
+  font: inherit;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.transaction-table button:hover {
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
