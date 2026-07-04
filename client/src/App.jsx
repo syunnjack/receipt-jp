@@ -12,7 +12,7 @@ function App() {
     <div className="app">
       <h1>レシート家計簿</h1>
 
-      <ReceiptUploader onAnalyzed={addTransactions} />
+      <ReceiptUploader transactions={transactions} onAnalyzed={addTransactions} />
 
       <div className="charts">
         <CategoryPieChart transactions={transactions} />

@@ -21,8 +21,12 @@ export function useTransactions() {
   }, [transactions])
 
   const addTransactions = (date, items) => {
+    // 同じアップロード（同じレシート）由来の項目をreceiptIdでまとめておく
+    // これにより後から「レシート単位の合計金額」を計算できる（重複検知に使用）
+    const receiptId = crypto.randomUUID()
     const newTransactions = items.map((item) => ({
       id: crypto.randomUUID(),
+      receiptId,
       date,
       name: item.name,
       price: item.price,

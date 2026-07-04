@@ -26,6 +26,14 @@
   margin-top: 8px;
 }
 
+.warning {
+  color: #b45309;
+  background: rgba(180, 83, 9, 0.1);
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
 .empty {
   color: var(--text);
 }
