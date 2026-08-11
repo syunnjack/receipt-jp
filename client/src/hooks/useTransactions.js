@@ -39,5 +39,9 @@ export function useTransactions() {
     setTransactions((prev) => prev.filter((t) => t.id !== id))
   }
 
-  return { transactions, addTransactions, removeTransaction }
+  const loadSample = (sampleData) => {
+    setTransactions(sampleData)
+  }
+
+  return { transactions, addTransactions, removeTransaction, loadSample }
 }
